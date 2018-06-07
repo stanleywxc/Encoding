@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proxy.COM", "Proxy.COM.vcproj", "{5C90F7F9-5C1A-45A5-BE80-E1BFFD9502B1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Proxy.COMPS", "Proxy.COMPS.vcproj", "{902A4B51-AA2B-446E-9CB5-9AF662704BDA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C90F7F9-5C1A-45A5-BE80-E1BFFD9502B1} = {5C90F7F9-5C1A-45A5-BE80-E1BFFD9502B1}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccProjectUniqueName0 = Proxy.COM.vcproj
+		SccProjectName0 = \u0022$/Services/Encoding/Proxy.COM\u0022,\u0020OTKCAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5C90F7F9-5C1A-45A5-BE80-E1BFFD9502B1}.Debug.ActiveCfg = Debug|Win32
+		{5C90F7F9-5C1A-45A5-BE80-E1BFFD9502B1}.Debug.Build.0 = Debug|Win32
+		{5C90F7F9-5C1A-45A5-BE80-E1BFFD9502B1}.Release.ActiveCfg = Release|Win32
+		{5C90F7F9-5C1A-45A5-BE80-E1BFFD9502B1}.Release.Build.0 = Release|Win32
+		{902A4B51-AA2B-446E-9CB5-9AF662704BDA}.Debug.ActiveCfg = Debug|Win32
+		{902A4B51-AA2B-446E-9CB5-9AF662704BDA}.Release.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

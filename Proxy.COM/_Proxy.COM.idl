@@ -1,0 +1,50 @@
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtml.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio .net 2003\vc7\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET 2003\Vc7\PlatformSDK\include\objsafe.idl";
+
+[
+	object,
+	uuid(A47C4CCE-73C6-44DD-9383-86C626C58E02),
+	dual,
+	helpstring("IProxy Interface"),
+	pointer_default(unique)
+] 
+#line 15 "d:\\projects\\enom\\services\\encoding\\proxy.com\\include\\proxy.h"
+interface IProxy : IDispatch {
+#line 18 "d:\\projects\\enom\\services\\encoding\\proxy.com\\include\\proxy.h"
+	[id(1),helpstring("method NativeToPunycode")] HRESULT  NativeToPunycode([in] BSTR , [in] BSTR , [in] BOOL , [in] BOOL , [out,retval] BSTR * );
+#line 21 "d:\\projects\\enom\\services\\encoding\\proxy.com\\include\\proxy.h"
+	[id(2),helpstring("method NativeToRace")] HRESULT  NativeToRace([in] BSTR , [in] BSTR , [in] BOOL , [in] BOOL , [out,retval] BSTR * );
+#line 24 "d:\\projects\\enom\\services\\encoding\\proxy.com\\include\\proxy.h"
+	[id(3),helpstring("method PunycodeToNative")] HRESULT  PunycodeToNative([in] BSTR , [in] BSTR , [in] BOOL , [in] BOOL , [out,retval] BSTR * );
+#line 27 "d:\\projects\\enom\\services\\encoding\\proxy.com\\include\\proxy.h"
+	[id(4),helpstring("method RaceToNative")] HRESULT  RaceToNative([in] BSTR , [in] BSTR , [in] BOOL , [in] BOOL , [out,retval] BSTR * );
+#line 30 "d:\\projects\\enom\\services\\encoding\\proxy.com\\include\\proxy.h"
+	[id(5),helpstring("method PunycodeToRace")] HRESULT  PunycodeToRace([in] BSTR , [in] BSTR , [in] BOOL , [in] BOOL , [out,retval] BSTR * );
+#line 33 "d:\\projects\\enom\\services\\encoding\\proxy.com\\include\\proxy.h"
+	[id(6),helpstring("method RaceToPunycode")] HRESULT  RaceToPunycode([in] BSTR , [in] BSTR , [in] BOOL , [in] BOOL , [out,retval] BSTR * );
+};
+
+
+[ version(1.0), uuid(B3EDDA36-04E6-4D2F-A39D-46C07038265E), helpstring("Encoding.Idn 1.0 Type Library") ]
+library EncodingIdn
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(F5C525CB-6A7F-4BA1-A07F-5BD524FFE9B5),
+		helpstring("EncodingIdn Class")
+	] 
+#line 48 "d:\\projects\\enom\\services\\encoding\\proxy.com\\include\\proxy.h"
+	coclass CProxy {
+		[default, source]	interface IProxy;
+	};
+
+}
+

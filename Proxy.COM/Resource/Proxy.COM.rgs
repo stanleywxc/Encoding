@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'EncodingIdn'
+		'Encoding.Idn.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}
